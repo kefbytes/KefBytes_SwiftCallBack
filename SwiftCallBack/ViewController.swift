@@ -9,17 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var someStackSetup: SomeStackSetup!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        someStackSetup.testAnotherCallback("Noah") {
+            returnedValue -> Void in
+            println(">>>>> whenDone:returnedValue = \(returnedValue) <<<<<")
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
