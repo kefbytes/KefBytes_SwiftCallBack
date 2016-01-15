@@ -159,6 +159,8 @@
 		1E29A1B11B4AF6C100A814EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Franks, Kent";
 				TargetAttributes = {
@@ -415,6 +417,7 @@
 				1E29A1DA1B4AF6C100A814EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E29A1DB1B4AF6C100A814EC /* Build configuration list for PBXNativeTarget "SwiftCallBackTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +426,7 @@
 				1E29A1DD1B4AF6C100A814EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

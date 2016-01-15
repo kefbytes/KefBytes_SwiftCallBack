@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         someStackSetup.testAnotherCallback("Noah") {
             returnedValue -> Void in
-            println(">>>>> whenDone:returnedValue = \(returnedValue) <<<<<")
+            print(">>>>> whenDone:returnedValue = \(returnedValue) <<<<<")
         }
     }
 }

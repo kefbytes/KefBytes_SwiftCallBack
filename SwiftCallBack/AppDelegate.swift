@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        var someStackSetup: SomeStackSetup = SomeStackSetup() {(response) -> Void in
+        let someStackSetup: SomeStackSetup = SomeStackSetup() {(response) -> Void in
             if response == "responseString" {
                 self.completeSetup()
             } else {
-                println(">>>>> response is not what we expected, abort setup <<<<<")
+                print(">>>>> response is not what we expected, abort setup <<<<<")
             }
         }
         let viewController: ViewController = self.window!.rootViewController as! ViewController
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func completeSetup() {
-        println(">>>>> AppDelegate:completeSetup() <<<<<")
+        print(">>>>> AppDelegate:completeSetup() <<<<<")
     }
     
 }

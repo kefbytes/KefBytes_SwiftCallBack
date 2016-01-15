@@ -16,7 +16,7 @@ class SomeStackSetup {
     }
     
     func testAnotherCallback (name: String, whenDone: (String) -> Void) {
-        println(">>>>> SomeStackSetup.testAnotherCallback() name = \(name) <<<<<")
+        print(">>>>> SomeStackSetup.testAnotherCallback() name = \(name) <<<<<")
         whenDone("Hannah")
     }
     
