@@ -10,15 +10,14 @@ import Foundation
 
 class SomeStackSetup {
     
-    init (handleSuccessfulCompletion: String -> Void) {
+    init (handleSuccessfulCompletion: (String) -> Void) {
         // do something and if successful call handleSuccessfulCompletion
-        handleSuccessfulCompletion("responseString")
+        handleSuccessfulCompletion("fail")
     }
     
     func testAnotherCallback (name: String, whenDone: (String) -> Void) {
-        print(">>>>> SomeStackSetup.testAnotherCallback() name = \(name) <<<<<")
+        print("🤖 SomeStackSetup.testAnotherCallback() name = \(name)")
         whenDone("Hannah")
     }
-    
     
 }

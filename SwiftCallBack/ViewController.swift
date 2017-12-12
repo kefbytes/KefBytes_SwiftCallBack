@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        someStackSetup.testAnotherCallback("Noah") {
+        someStackSetup.testAnotherCallback(name: "Noah") {
             returnedValue -> Void in
-            print(">>>>> whenDone:returnedValue = \(returnedValue) <<<<<")
+            print("🤖 whenDone:returnedValue = \(returnedValue)")
         }
     }
 }
